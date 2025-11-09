@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proxy Masker</title>
+  <style>
+    body {  font-family: sans-serif; width: 300px; padding: 10px; }
+    #proxyList { list-style: none; padding: 0; }
+    #proxyList li { margin-bottom: 5px; }
+    input[type="text"] { width: 80%; padding: 5px; }
+    button { padding: 5px 10px; }
+  body {
+        background-image: url("https://yourimageshare.com/ib/bCK1nsnIJi.png"); /* Adjust the path as needed */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-size: cover; /* Scales the image to cover the entire container */
+        background-position: center; 
+    color:white;
+    }
+  </style>
+</head>
+<body>
+  <h2>ShieldVPN ProxyMaster</h2>
+   <h2>Your Public IP Address:</h2>
+    <p id="ip-address"></p>
+
+  <div>
+    <input type="checkbox" id="enableProxy">
+    <label for="enableProxy">Enable Proxy</label>
+  </div>
+  <h3>Custom Proxies</h3>
+  <ul id="proxyList"></ul>
+  <div>
+    <input type="text" id="newProxyInput" placeholder="host:port">
+    <button id="addProxyBtn">Add Proxy</button>
+  </div>
+   <h3>Confirmed Working IPs/ports:</h3>
+   <div>
+  <img src="https://yourimageshare.com/ib/oJ6PryqWte.png" alt="Flag of [Country Name]" width="20" height="15"> <i>4.149.153.123:3128</i>
+   </div>
+  <div>
+    <img src="https://yourimageshare.com/ib/4M3DK1RCzw.png" alt="Flag of [Country Name]" width="20" height="15"> <i>203.202.241.3:3128</i>
+    </div>
+    <div>
+    <img src="https://yourimageshare.com/ib/ysB2QQ9Jpi.png" alt="Flag of [Country Name]" width="20" height="15"> <i>122.220.8.210:8080</i>
+    </div>
+  <p>For more proxies, get them from here <a href="https://spys.one/proxy-port/3128/"><b>https://spys.one/proxy-port/3128/</b></a> or another similar site.</p>
+  <script src="popup.js"></script>
+  <script src="displayip.js"></script>
+</body> 
+</html>
