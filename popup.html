@@ -15,6 +15,12 @@
         background-position: center; 
     color:white;
     }
+    #my-small-text {
+  font-size: 9px; /* Sets the font size to 12 pixels */
+}
+     #ip-address {
+  font-size: 15px; /* Sets the font size to 12 pixels */
+}
   </style>
 </head>
 <body>
@@ -32,20 +38,16 @@
     <input type="text" id="newProxyInput" placeholder="host:port">
     <button id="addProxyBtn">Add Proxy</button>
   </div>
-   <h3>Confirmed Working IPs/ports:</h3>
- 
-  <div>
-    <img src="https://yourimageshare.com/ib/4M3DK1RCzw.png" alt="Flag of [Country Name]" width="20" height="15"> <i>203.202.241.3:3128</i>
-    </div>
-   <div>
-    <img src="https://yourimageshare.com/ib/ZTdJkR3Xl7.png" alt="Flag of [Country Name]" width="18" height="15"> <i>41.33.142.182:8081</i>
-    </div>
-      <div>
-    <img src="https://yourimageshare.com/ib/ZTdJkR3Xl7.png" alt="Flag of [Country Name]" width="20" height="15"> <i>41.33.67.36:3130</i>
-    </div>
- 
 
+   <h3>Confirmed Working IPs/ports:</h3>
+    <div id="my-small-text">
+  <p> IPs are automatically fetched/updated from a live site page, you do not need to re-install ShieldVPN at any point to get new updates on tested/woring IPs.</p>
+   </div>
+ <iframe src="https://japanga.github.io/shieldvpn/index.html" width="100%" height="150px"></iframe>
+ 
+ <div id="my-small-text">
   <p> For more proxies, get them from here <a href="https://spys.one/proxy-port/3128/"><b>https://spys.one/proxy-port/3128/</b></a> or another similar site. We personally recommend Egyptian IP addresses as they tend to give the best connection.</p>
+   </div>
   <script src="popup.js"></script>
   <script src="displayip.js"></script>
 </body> 
