@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page - Silver Gradient</title>
+    <style>
+        /* Global Styles & Silver Gradient Background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* A subtle silver/light gray gradient */
+            background: linear-gradient(to bottom, #d7d7d8 0%, #eeeeee 100%);
+            background-attachment: fixed; /* Ensures the gradient covers the whole page even with little content */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+           background-image: url("https://yourimageshare.com/ib/bCK1nsnIJi.png"); /* Adjust the path as needed */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-size: cover; /* Scales the image to cover the entire container */
+        background-position: center; 
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white container for readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #555;
+        }
+
+        /* FAQ Item Styling */
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        /* Question "Tablet" Styling */
+        .faq-question {
+            background-color: #a0a0a0; /* Gray/silver color for the question background */
+            color: white;
+            padding: 15px 20px;
+            border-radius: 25px; /* Rounded corners, making it a "tablet" shape */
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+           border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+           background-image: linear-gradient(to bottom, #080808, #5C5C5C);
+        }
+
+        .faq-question:hover {
+            background-image: linear-gradient(to bottom, #080808, #828282);
+        }
+
+        /* Answer "Tablet" Styling */
+        .faq-answer {
+          background-image: linear-gradient(to right, #BDBDBD, #E6E6E6, #454545);
+            padding: 15px 20px;
+            border-radius: 25px; /* Rounded corners */
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            /* Add some margin to offset it from the question tablet and align text */
+            margin-left: 20px; 
+            margin-right: 20px;
+          color:black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-question">I could not get a signal! All of the IPs said "Could not retrieve IP address"</div>
+            <div class="faq-answer">
+                Please have patience when using ShieldVPN. Proxy IPs each have their own speeds and uptime percentages, and there is a very likely chance that the region you tried to use simply was unable to connect at that given moment. You could try again later and it could connect instantly.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">My IP connected, but it could not get past any captchas or perform any web functions under the proxy mask!</div>
+            <div class="faq-answer">
+                Just because you CAN connect, does not mean you will be able to instantly do what you want on the web from your given proxy IP. The ones provided for you on the public list were specifically tested for use on <a href="https://4chan.org/"><b>https://4chan.org/</b></a>, and are only included after they have managed to fully upload a post and bypass the captcha systems. You can either use these to post straight-on, or go through a free proxy IP list until you are able to find one that works for your intentions.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I have been trying for hours, and not a single one of the proxy IPs can connect!</div>
+            <div class="faq-answer">
+                Trial and error. You are provided the list of test proxies for a reason, the developers of ShieldVPN want to make the experience easier and more user friendly. It could take a while, sometimes even hours: but you will always be able to find a usable proxy IP.
+            </div>
+        </div>
+
+     
+    </div>
+
+</body>
+</html>
