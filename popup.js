@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const newProxyInput = document.getElementById('newProxyInput');
   const addProxyBtn = document.getElementById('addProxyBtn');
   
-     chrome.action.setBadgeText({ text: "OFF"});
-       chrome.action.setBadgeBackgroundColor({ color: "#FF0000" });
 
   // Load saved proxies and settings
   chrome.storage.sync.get(['proxies', 'proxyEnabled'], (data) => {
