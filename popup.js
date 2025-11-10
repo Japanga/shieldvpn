@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const proxyListElement = document.getElementById('proxyList');
   const newProxyInput = document.getElementById('newProxyInput');
   const addProxyBtn = document.getElementById('addProxyBtn');
+  
+     chrome.action.setBadgeText({ text: "OFF"});
+       chrome.action.setBadgeBackgroundColor({ color: "#FF0000" });
 
   // Load saved proxies and settings
   chrome.storage.sync.get(['proxies', 'proxyEnabled'], (data) => {
@@ -22,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const proxies = data.proxies || [];
       updateProxySettings(isEnabled, proxies);
       chrome.storage.sync.set({ proxyEnabled: isEnabled });
+       chrome.action.setBadgeText({ text: "ON" });
+chrome.action.setBadgeBackgroundColor({ color: "#4CAF50" });
     });
   });
 
@@ -51,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
       removeBtn.textContent = 'Remove';
       removeBtn.addEventListener('click', () => {
         proxies.splice(index, 1);
+       chrome.action.setBadgeText({ text: "OFF"});
+       chrome.action.setBadgeBackgroundColor({ color: "#FF0000" });
         chrome.storage.sync.set({ proxies }, () => {
           renderProxyList(proxies);
           if (enableProxyCheckbox.checked) {
